@@ -147,7 +147,6 @@
 				</li>
 				<li class="buttons">
 					<input id="saveTask" class="button_text" type="button" value="Сформувати текст задачі" />
-					<input id="saveForm" class="button_text" type="submit" value="Очистити форму" hidden="true"/>
 					<input id="Menu" class="button_text" type="button" value="Головне меню" onclick="document.location='index.html'"/>
 				</li>
 				<li>
@@ -203,12 +202,7 @@
 				break;
 			}
 		}
-		form_container.addEventListener("change", changeOption_2);
-		document.getElementById('saveForm').onclick = function() {
-			document.getElementById("saveForm").hidden = true;
-		}
 		document.getElementById('saveTask').onclick = function() {
-			document.getElementById("saveForm").hidden = false;
 			var k = "";
 			let paragraph = document.querySelector('p');
 			if(element_1.selectedIndex == 0 || element_2.selectedIndex == 0 ||
